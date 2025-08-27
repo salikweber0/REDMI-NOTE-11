@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="redmipending.css">
+    <script src="redmipending.js" defer></script>
+</head>
+<body>
+    <!-- Add this just after <body> tag -->
+<div id="page-loader" style="position: fixed; top: 0; left: 0; height: 100vh; width: 100%; background: linear-gradient(135deg, #0f1c2d, #132d46); display: flex; align-items: center; justify-content: center; z-index: 99999;">
+  <div style="display: flex; gap: 10px;">
+    <div class="box">R</div>
+    <div class="box">E</div>
+    <div class="box">D</div>
+    <div class="box">M</div>
+    <div class="box">I</div>
+    <br>
+    <p class="boxp">Loading...</p>
+  </div>
+</div>
+
+    <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">Redmi <span>Note 11</span></h1>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <div class="nav-close" onclick="document.querySelector('.nav-links').classList.remove('active')">&times;</div>
+          <li><a href="index.html">Home<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmifeatures.html">Features<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmipending.html">Gallery<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmispecs.html">Specs<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmipending.html">FAQ<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmipending.html">About US<i class="fa-solid fa-arrow-right"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="pending">
+    <h1>PENDING WORK</h1>
+    <p>Only Home, Features and Specs pages are "ACTIVE".</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Redmi Note 11 Showcase | Designed by Shaikh Salik</p>
+      <p>Collage Project | Made with ❤ & Dedication</p>
+    </div>
+  </footer>
+</body>
+</html>

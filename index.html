@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redmi Note 11 | Official Showcase Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="redmihome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+  <script defer src="redmihome.js"></script>
+</head>
+
+<body>
+    <!-- Add this just after <body> tag -->
+<div id="page-loader" style="position: fixed; top: 0; left: 0; height: 100vh; width: 100%; background: linear-gradient(135deg, #0f1c2d, #132d46); display: flex; align-items: center; justify-content: center; z-index: 99999;">
+  <div style="display: flex; gap: 10px;">
+    <div class="box">R</div>
+    <div class="box">E</div>
+    <div class="box">D</div>
+    <div class="box">M</div>
+    <div class="box">I</div>
+    <br>
+    <p class="boxp">Loading...</p>
+  </div>
+</div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">Redmi <span>Note 11</span></h1>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <div class="nav-close" onclick="document.querySelector('.nav-links').classList.remove('active')">&times;</div>
+          <li><a href="index.html" class="active">Home<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmifeatures.html">Features<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmipending.html">Gallery<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmispecs.html">Specs<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmipending.html">FAQ<i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="redmipending.html">About US<i class="fa-solid fa-arrow-right"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="money">Value for<br>MONEY</p>
+      <div class="hero-text">
+        <h2>Meet the Power of <span style="color: #ff416c;">Style</span> & <span style="color: #ff416c;">Speed</span></h2>
+        <p>Redmi Note 11 is not just a phone. It’s an experience of performance, elegance, and creativity — designed to elevate every moment.</p>
+        <a href="redmipending.html" class="btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-img">
+        <img src="redmi.png" alt="Redmi Note 11" loading="lazy"/>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+      </div>
+    </div>
+  </section>
+  <hr style="height: 1px; background: linear-gradient(135deg, #ff416c, #ff4b2b); border: none; margin: 0; padding: 0;">
+
+  <!-- Features Section Placeholder -->
+  <section class="features-preview">
+    <div class="container">
+      <h2 class="section-title">Why Redmi Note 11 ?</h2>
+      <div class="features-grid">
+        <div class="feature-card hover-glow">
+          <img src="processor.png" alt="Performance">
+          <h3>Superfast Snapdragon</h3>
+          <p>Built for multi-tasking, gaming, and speed. Experience unmatched performance.</p>
+        </div>
+        <div class="feature-card hover-glow">
+          <img src="display.png" alt="Display">
+          <h3>90Hz AMOLED Display</h3>
+          <p>Enjoy buttery smooth visuals with stunning color accuracy.</p>
+        </div>
+        <div class="feature-card hover-glow">
+          <img src="camera.png" alt="Camera">
+          <h3>50MP AI Quad Camera</h3>
+          <p>Capture life in ultra clarity with powerful smart features.</p>
+        </div>
+        <div class="feature-card hover-glow">
+          <img src="battery.png" alt="Battery">
+          <h3>5000mAh <br> Battery</h3>
+          <p>Long-lasting battery that powers your day with fast charging.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="cta-title">Your Style. Your Speed. <br><span style="color: #243949; text-shadow: 0px 0px 2px whitesmoke;">Redmi Note 11.</span></h2>
+      <a href="redmipending.html" class="btn btn-dark">Reviews</a>
+    </div>
+  </section>
+
+   <!-- Popup Modal -->
+<!-- Popup Modal - ye HTML tumhare redmihome.html mein replace karo -->
+<!-- First popup (existing one) - Just change id to popupModal1 -->
+<div id="popupModal1" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <div class="popup-inner">
+      <div class="popup-main-content">
+        <img src="processor.png" alt="Popup Image" loading="lazy">
+        <div class="popup-text">
+          <h2>Superfast Snapdragon</h2>
+          <p>Built for multi-tasking, gaming, and speed. Experience unmatched performance with cutting-edge technology.</p>
+        </div>
+      </div>
+      
+      <div class="extra">
+        <h3>Top Features</h3>
+        <ul>
+          <li>Processor: Qualcomm Snapdragon® 680 (6nm)</li>
+          <li>AI-powered performance enhancement</li>
+          <li>Enhanced GPU for smooth graphics</li>
+          <li>Efficient power management</li>
+        </ul>
+      </div>
+      <div class="extcontent">
+        <div class="extrap">
+          <h2>Powerful Gaming <br>40 FPS</h2>
+          <p class="fpsp1">Experience smooth gaming with 40 FPS performance, ensuring every frame is rendered flawlessly.</p>
+        </div>
+        <div class="extraimg">
+          <img src="40fps.jpg" alt="40 FPS" class="fpsimg" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second popup (Display) -->
+<div id="popupModal2" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <div class="popup-inner">
+      <div class="popup-main-content">
+        <img src="display.png" alt="Display" loading="lazy">
+        <div class="popup-text">
+          <h2>90Hz AMOLED Display</h2>
+          <p>Enjoy buttery smooth visuals with stunning color accuracy and vibrant display technology.</p>
+        </div>
+      </div>
+      
+      <div class="extra">
+        <h3>Top Features</h3>
+        <ul>
+          <li>Display: 6.43" FHD+ AMOLED DotDisplay</li>
+          <li>Corning Gorilla Glass 3 protection</li>
+          <li>Resolution: 2400 x 1080 pixels</li>
+          <li>Peak Brightness: 1000 nits</li>
+        </ul>
+      </div>
+      <div class="extcontent">
+        <div class="extrap">
+          <h2>Ultra Bright <br>1000 Nits</h2>
+          <p class="fpsp1">Experience crystal clear visibility even in bright sunlight with 1000 nits peak brightness.</p>
+        </div>
+        <div class="extraimg">
+          <img src="disp.jpg" alt="1000 Nits" class="fpsimg" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third popup (Camera) -->
+<div id="popupModal3" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <div class="popup-inner">
+      <div class="popup-main-content">
+        <img src="camera.png" alt="Camera" loading="lazy">
+        <div class="popup-text">
+          <h2>50MP AI Quad Camera</h2>
+          <p>Capture life in ultra clarity with powerful smart features and advanced AI photography.</p>
+        </div>
+      </div>
+      
+      <div class="extra">
+        <h3>TOp Features</h3>
+        <ul>
+          <li>50MP wide-angle main lens with PDAF & LED flash</li>
+          <li>AI scene detection for auto enhancement in every shot</li>
+          <li>AI scene detection for auto enhancement in every shot</li>
+          <li>13MP front camera with AI beauty, HDR & portrait mode</li>
+        </ul>
+      </div>
+      <div class="extcontent">
+        <div class="extrap">
+          <h2>Ultra Clear <br>50MP</h2>
+          <p class="fpsp1">Capture every detail with stunning 50MP resolution and professional-grade image quality.</p>
+        </div>
+        <div class="extraimg">
+          <img src="came.jpg" alt="50MP" class="fpsimg" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth popup (Battery) -->
+<div id="popupModal4" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <div class="popup-inner">
+      <div class="popup-main-content">
+        <img src="battery.png" alt="Battery" loading="lazy">
+        <div class="popup-text">
+          <h2>5000mAh Battery</h2>
+          <p>Long-lasting battery that powers your day with fast charging and efficient power management.</p>
+        </div>
+      </div>
+      
+      <div class="extra">
+        <h3>Top Features</h3>
+        <ul>
+          <li>Battery: 5000mAh Li-Po non-removable</li>
+          <li>Fast Charging: 33W wired charging</li>
+          <li>Charging Time: 0-100% in 60 minutes</li>
+          <li>Smart battery optimization</li>
+        </ul>
+      </div>
+      <div class="extcontent">
+        <div class="extrap">
+          <h2>Fast Charge <br>33W</h2>
+          <p class="fpsp1">Get your phone charged quickly with 33W fast charging technology in just 58 minutes.</p>
+        </div>
+        <div class="extraimg">
+          <img src="batt.png" alt="33W" class="fpsimg" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Redmi Note 11 Showcase | Designed by Shaikh Salik</p>
+      <p>Collage Project | Made with ❤ & Dedication</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>
